@@ -1,0 +1,152 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 1.5;
+  font-size: 17px;
+}
+#navbar {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 300px;
+  border-right: solid rgb(145, 145, 145);
+}
+header {
+  display: block;
+  color: black;
+  font-size: 30px;
+  margin: 10px;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  /* TO BE ABLE TO NAVIGATE UP AND DOWN THE NAV LIST IN CASE THIS IS LONGER THAN THE SCREEN'S HEIGHT */
+  overflow-y: auto;
+}
+nav a {
+  cursor: pointer;
+  text-decoration: none;
+}
+nav ul a li {
+  color: black;
+  position: relative;
+  border-top: 1px solid;
+  padding: 10px 0px 10px 20px;
+}
+.nav-link :hover {
+    background-color: #f7f7f7;
+}
+ul {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+#main-doc {
+  display: block;
+  position: absolute;
+  left: 310px;
+}
+.main-section {
+  display: block;
+  position: relative;
+  margin: 20px;
+  text-align: justify;
+}
+.main-section header {
+  text-align: left;
+  margin-top: 20px;
+}
+p {
+  text-indent: 30px;
+}
+h1 {
+  font-size: 19px;
+  font-weight: inherit;
+  margin: 30px 0 10px 0;
+  text-decoration: underline;
+}
+code {
+  display: block;
+  text-align: left;
+  position: relative;
+  line-height: 2;
+  font-size: 15px;
+  font-family: monospace;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5%;
+  /* THE TEXT-INDENT NEEDS TO BE SET FOR THE CODE TAGS FOUND INSIDE THE P TAGS, <p> HAVE THE TEXT-INDENT SET TO 30PX */
+  text-indent: 0px !important;
+}
+.ul-inside-ul {
+  margin-left: 120px;
+}
+#Data_types ul {
+  margin-left: 70px;
+}
+@media (max-width: 950px) {
+  body {
+    font-size: 12px !important;
+    min-width: 320px;
+    touch-action: manipulation;
+    -ms-touch-action: manipulation;
+  }
+  header {
+    font-size: 15px;
+  }
+  #navbar {
+      width: 200px;
+  }
+  #main-doc {
+      left: 210px;}
+}
+@media (max-width: 740px) , (max-height: 440px) {
+body {
+    min-width: 320px;
+    touch-action: manipulation;
+    -ms-touch-action: manipulation;
+}
+#navbar{
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 270px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+    background-color: white;
+}
+nav header {
+    font-size: 17px;
+}
+#navbar ul {
+    border: 1px solid;
+    height: 195px;
+}
+#main-doc {
+    position: absolute;
+    top: 290px;
+    left: 0;
+    width: 100%;
+}
+code {
+    font-size: 12px;
+    padding: 7px;
+    margin: 5px;
+    text-indent: 0px;
+  }
+  #Data_types ul {
+    margin-left: 40px;
+  }
+}
